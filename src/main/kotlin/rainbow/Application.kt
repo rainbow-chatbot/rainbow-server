@@ -1,7 +1,7 @@
-package bot
+package rainbow
 
-import bot.plugins.configureHTTP
-import bot.plugins.configureRouting
+import rainbow.plugins.configureHTTP
+import rainbow.plugins.configureRouting
 import io.ktor.server.engine.embeddedServer
 import io.ktor.server.netty.Netty
 

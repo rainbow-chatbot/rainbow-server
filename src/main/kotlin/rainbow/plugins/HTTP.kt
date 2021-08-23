@@ -1,4 +1,4 @@
-package bot.plugins
+package rainbow.plugins
 
 import io.ktor.application.Application
 import io.ktor.application.install
