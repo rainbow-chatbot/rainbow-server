@@ -1,4 +1,5 @@
 <html>
+<title>랜덤 뽑기!</title>
 <body>
 <h3>Input values: ${random.all}</h3>
 <hr/>
