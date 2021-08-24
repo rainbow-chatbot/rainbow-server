@@ -8,6 +8,8 @@ import io.ktor.routing.get
 import io.ktor.routing.post
 import io.ktor.routing.routing
 
+private val values = mutableListOf<String>()
+
 fun Application.configureRouting() {
     routing {
         get("/") {
@@ -27,8 +29,13 @@ fun Application.configureRouting() {
             call.respondText("Error!!!")
         }
 
+        get("/post") {
+            call.respondText("[지금까지 받은 post]\n${values.joinToString("\n")}")
+        }
+
         post("/post") {
             val value = call.receive(String::class)
+            values.add(value)
             call.respondText(value)
         }
     }

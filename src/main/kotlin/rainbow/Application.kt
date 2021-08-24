@@ -10,3 +10,4 @@ fun main() {
         configureHTTP()
         configureRouting()
     }.start(wait = true)
+}
