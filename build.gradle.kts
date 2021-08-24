@@ -15,6 +15,9 @@ repositories {
 }
 
 dependencies {
-    implementation("io.ktor:ktor-server-core:1.6.2")
-    implementation("io.ktor:ktor-server-netty:1.6.2")
+    val ktorVersion = "1.6.2"
+    implementation("io.ktor:ktor-server-core:$ktorVersion")
+    implementation("io.ktor:ktor-server-netty:$ktorVersion")
+
+    implementation ("org.slf4j:slf4j-simple:1.7.26")
 }
