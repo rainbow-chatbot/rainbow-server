@@ -2,7 +2,7 @@ package rainbow.model
 
 import com.google.gson.annotations.SerializedName
 
-data class Message(
+data class Chat(
     @field:SerializedName("senderId")
     val senderId: SenderId,
 
